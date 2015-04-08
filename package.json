@@ -1,0 +1,31 @@
+{
+  "name": "@ds/rewriter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.creditcloud.com:10022/ccfe/ds-rewriter.git"
+  },
+  "keywords": [
+    "render"
+  ],
+  "author": {
+    "name": "undoZen",
+    "email": "opensource@undozen.com"
+  },
+  "license": "private",
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
+  "dependencies": {
+    "rev-rewriter": "^1.3.0",
+    "xtend": "^4.0.0"
+  }
+}
