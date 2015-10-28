@@ -1,12 +1,20 @@
 'use strict';
 var rewriter = require('rev-rewriter');
 var xtend = require('xtend');
+var cdnDomain = require('config').cdnDomain;
 module.exports = function (revMap, contents, noMediaQueries) {
     return rewriter(xtend({
         revMap: revMap,
         assetPathPrefix: '/',
         revPost: function (p, rewritten) {
-            return !rewritten || p[0] !== '/' ? '/' + p : p;
+            if (!rewritten) {
+                return '/' + p;
+            }
+            var url = p[0] !== '/' ? '/' + p : p;
+            if (typeof cdnDomain === 'string') {
+                url = '//' + cdnDomain.replace(/^(https?)?\/+|\/+$/i, '') + url;
+            }
+            return url;
         }
     }, noMediaQueries ? {
         revPre: function (p) {
