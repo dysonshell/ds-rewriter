@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.creditcloud.com:10022/ccfe/ds-rewriter.git"
+    "url": "git@github.com:dysonshell/ds-rewriter.git"
   },
   "keywords": [
     "render"
@@ -21,12 +21,15 @@
     "email": "opensource@undozen.com"
   },
   "license": "MIT",
-  "devDependencies": {
-    "tape": "^4"
+  "bugs": {
+    "url": "https://github.com/dysenshell/ds-rewriter/issues"
   },
   "dependencies": {
     "config": "^1",
     "rev-rewriter": "^1",
     "xtend": "^4"
+  },
+  "devDependencies": {
+    "tape": "^4"
   }
 }
