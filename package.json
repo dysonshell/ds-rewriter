@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:dysonshell/ds-rewriter.git"
+    "url": "ssh://git@github.com/dysonshell/ds-rewriter.git"
   },
   "keywords": [
     "render"
